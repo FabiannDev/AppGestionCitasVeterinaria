@@ -21,7 +21,7 @@ public class ActualizarCombos extends ConectarBD{
                                  " order by 1;";
     
     public String conultaRol="select distinct r.descripcion" +
-                                 " from roles r" +
+                                 " from ROL r" +
                                  " order by 1;";
    
     
@@ -34,7 +34,7 @@ public class ActualizarCombos extends ConectarBD{
                 combo.addItem(rs.getString(1));
             }
         }catch(Exception ex){
-            Mensajes.M1("ERROR no se puede cargar el combo..."+ex);
+            Mensajes.M1("Error al cargar combo"+ex);
         }
     }//fin metodo
     
